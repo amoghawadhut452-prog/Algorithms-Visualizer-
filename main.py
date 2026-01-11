@@ -2,15 +2,14 @@ import tkinter as tk
 import random
 import time
 
-# ===============================
+
 # Global variables
-# ===============================
+
 worker = None
 data = []
 
-# ===============================
+
 # Sorting Algorithm Generators
-# ===============================
 
 def bubble_sort():
     global data
@@ -118,9 +117,9 @@ def partition(start, end):
     data[i], data[end] = data[end], data[i]
     return i
 
-# ===============================
+
 # UI Helper Functions
-# ===============================
+
 
 def draw_data(data, color_array):
     canvas.delete("all")
@@ -171,9 +170,9 @@ def animate():
             draw_data(data, ["green" for _ in range(len(data))])
             worker = None
 
-# ===============================
+
 # Tkinter UI Setup
-# ===============================
+
 
 window = tk.Tk()
 window.title("Sorting Algorithm Visualizer")
